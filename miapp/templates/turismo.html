@@ -387,7 +387,7 @@
   <nav>
     <a href="#destinos">Destinos</a>
     <a href="#experiencias">Experiencias</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="{% url 'contacto' %}">Contacto</a>
   </nav>
 </header>
 
@@ -408,7 +408,7 @@
 
     <div class="hero-actions">
       <a class="btn btn-primary" href="#destinos">Explorar destinos</a>
-      <a class="btn btn-ghost" href="contacto.html">Hablar con un asesor</a>
+      <a class="btn btn-ghost" href="{% url 'contacto' %}">Hablar con un asesor</a>
     </div>
   </div>
 
@@ -491,15 +491,15 @@
       ¿Quieres algo totalmente personalizado? <strong>Diseñamos tu viaje desde cero</strong> según tu perfil,
       presupuesto y fechas. 
     </p>
-    <a class="btn btn-primary" href="contacto.html">Solicitar asesoría</a>
+    <a class="btn btn-primary" href="{% url 'contacto' %}">Solicitar asesoría</a>
   </div>
 </section>
 
-<a href = "{ % url 'contacto' % }"></a>
+<a href = "{% url 'contacto' %}"></a>
 
 <footer>
   <span>© 2025 Viajahoy · Plataforma de turismo inteligente.</span>
-  <span>¿Dudas? <a href="contacto.html">Contáctanos aquí</a></span>
+  <span>¿Dudas? <a href="{% url 'contacto' %}">Contáctanos aquí</a></span>
 </footer>
 
 </body>
